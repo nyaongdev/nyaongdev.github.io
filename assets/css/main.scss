@@ -8,6 +8,15 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// Font 변경
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+$serif              : "Inconsolata", monospace, "PT Serif", Georgia, Times, serif;
+$sans-serif-narrow  : "Inconsolata", monospace, "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+
+$global-font-family : $serif;
+$header-font-family : $sans-serif-narrow;
+$caption-font-family: $serif !default;
+
 // 코드 블록 스타일 (Velog 스타일 적용)
 pre.highlight, .highlight pre {
   background-color: #2d2d2d !important; /* 어두운 배경 (Velog와 유사) */
@@ -34,57 +43,78 @@ code {
   font-size: 85%; /* 글자 크기 조정 */
 }
 
-// 특정 키워드에 대한 색상 (Velog 스타일)
-pre code .keyword {
-  color: #c678dd !important; /* 주요 키워드 색상 (보라색) */
+html {
+  font-size: 12px; // originally 16px
+  @include breakpoint($medium) {
+    font-size: 14px; // originally 18px
+  }
+
+  @include breakpoint($large) {
+    font-size: 16px; // originally 20px
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px; // originally 22px
+  }
 }
 
-pre code .string {
-  color: #98c379 !important; /* 문자열 색상 (초록색) */
+// list title link remove underline
+.archive a {
+  color: inherit;
+  text-decoration: none;
 }
 
-pre code .function {
-  color: #61afef !important; /* 함수명 색상 (파란색) */
-}
-
-pre code .variable {
-  color: #e5c07b !important; /* 변수명 색상 (노란색) */
-}
-
-// JSON 코드 블록 스타일
-pre code .key {
-  color: #e06c75 !important; /* JSON 키의 색상 (핑크빛) */
-}
-
-pre code .string {
-  color: #98c379 !important; /* 문자열의 색상 (초록색) */
-}
-
-pre code .number {
-  color: #d19a66 !important; /* 숫자의 색상 (주황색) */
-}
-
-pre code .boolean {
-  color: #56b6c2 !important; /* 불리언 값의 색상 (파란색) */
-}
-
-pre code .null {
-  color: #c678dd !important; /* null 값의 색상 (보라색) */
-}
-
-pre code .punctuation {
-  color: #abb2bf !important; /* 콤마, 중괄호 등 기본 텍스트 색상 */
-}
-
-// Bash 코드 블록 스타일
-pre code .command {
-  color: #61afef !important; /* 명령어 색상 (파란색) */
-}
-
-pre code .parameter {
-  color: #98c379 !important; /* 매개변수 색상 (초록색) */
-}
-
-pre code .flag {
-  color: #d19a66 !important; /* 플래그 색상 (주황색) */
-}
+//// 특정 키워드에 대한 색상 (Velog 스타일)
+//pre code .keyword {
+//  color: #c678dd !important; /* 주요 키워드 색상 (보라색) */
+//}
+//
+//pre code .string {
+//  color: #98c379 !important; /* 문자열 색상 (초록색) */
+//}
+//
+//pre code .function {
+//  color: #61afef !important; /* 함수명 색상 (파란색) */
+//}
+//
+//pre code .variable {
+//  color: #e5c07b !important; /* 변수명 색상 (노란색) */
+//}
+//
+//// JSON 코드 블록 스타일
+//pre code .key {
+//  color: #e06c75 !important; /* JSON 키의 색상 (핑크빛) */
+//}
+//
+//pre code .string {
+//  color: #98c379 !important; /* 문자열의 색상 (초록색) */
+//}
+//
+//pre code .number {
+//  color: #d19a66 !important; /* 숫자의 색상 (주황색) */
+//}
+//
+//pre code .boolean {
+//  color: #56b6c2 !important; /* 불리언 값의 색상 (파란색) */
+//}
+//
+//pre code .null {
+//  color: #c678dd !important; /* null 값의 색상 (보라색) */
+//}
+//
+//pre code .punctuation {
+//  color: #abb2bf !important; /* 콤마, 중괄호 등 기본 텍스트 색상 */
+//}
+//
+//// Bash 코드 블록 스타일
+//pre code .command {
+//  color: #61afef !important; /* 명령어 색상 (파란색) */
+//}
+//
+//pre code .parameter {
+//  color: #98c379 !important; /* 매개변수 색상 (초록색) */
+//}
+//
+//pre code .flag {
+//  color: #d19a66 !important; /* 플래그 색상 (주황색) */
+//}
