@@ -18,30 +18,30 @@ $header-font-family : $sans-serif-narrow;
 $caption-font-family: $serif !default;
 
 // 코드 블록 스타일 (Velog 스타일 적용)
-pre.highlight, .highlight pre {
-  background-color: #2d2d2d !important; /* 어두운 배경 (Velog와 유사) */
-  color: #abb2bf !important; /* 텍스트 색상 */
-  padding: 0 !important; /* 내부 여백 제거 */
-  border-radius: 0 !important; /* 모서리 둥글기 제거 */
-  overflow: auto; /* 내용이 넘칠 경우 스크롤 */
-  line-height: 1.5; /* 코드 간 간격 조정 */
-}
-
-.highlight code, pre code {
-  background-color: transparent !important; /* 코드 블록 내 코드의 배경 투명 */
-  color: inherit !important; /* 부모 요소의 색상 상속 */
-  padding: 0 !important; /* 여백 제거 */
-  font-size: 1em;
-}
-
-// 인라인 코드 스타일 (Velog 스타일 적용)
-code {
-  background-color: #2d2d2d !important; /* 어두운 배경 */
-  color: #e06c75 !important; /* 핑크빛 텍스트 (Velog 스타일) */
-  padding: 0 !important; /* 내부 여백 최소화 */
-  border-radius: 3px !important; /* 모서리 둥글게 */
-  font-size: 85%; /* 글자 크기 조정 */
-}
+//pre.highlight, .highlight pre {
+//  background-color: #2d2d2d !important; /* 어두운 배경 (Velog와 유사) */
+//  color: #abb2bf !important; /* 텍스트 색상 */
+//  padding: 0 !important; /* 내부 여백 제거 */
+//  border-radius: 0 !important; /* 모서리 둥글기 제거 */
+//  overflow: auto; /* 내용이 넘칠 경우 스크롤 */
+//  line-height: 1.5; /* 코드 간 간격 조정 */
+//}
+//
+//.highlight code, pre code {
+//  background-color: transparent !important; /* 코드 블록 내 코드의 배경 투명 */
+//  color: inherit !important; /* 부모 요소의 색상 상속 */
+//  padding: 0 !important; /* 여백 제거 */
+//  font-size: 1em;
+//}
+//
+//// 인라인 코드 스타일 (Velog 스타일 적용)
+//code {
+//  background-color: #2d2d2d !important; /* 어두운 배경 */
+//  color: #e06c75 !important; /* 핑크빛 텍스트 (Velog 스타일) */
+//  padding: 0 !important; /* 내부 여백 최소화 */
+//  border-radius: 3px !important; /* 모서리 둥글게 */
+//  font-size: 85%; /* 글자 크기 조정 */
+//}
 
 html {
   font-size: 12px; // originally 16px
