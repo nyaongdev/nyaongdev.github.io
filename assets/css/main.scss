@@ -13,7 +13,7 @@ pre.highlight, .highlight pre {
   background-color: #2d2d2d !important; /* 어두운 배경 (Velog와 유사) */
   color: #abb2bf !important; /* 텍스트 색상 */
   padding: 0 !important; /* 내부 여백 제거 */
-  border-radius: 5px !important; /* 모서리 둥글기 제거 */
+  border-radius: 0 !important; /* 모서리 둥글기 제거 */
   overflow: auto; /* 내용이 넘칠 경우 스크롤 */
   line-height: 1.5; /* 코드 간 간격 조정 */
 }
@@ -50,7 +50,8 @@ pre code .function {
 pre code .variable {
   color: #e5c07b !important; /* 변수명 색상 (노란색) */
 }
-// JSON 코드 블록에 대한 스타일 (One Dark 스타일 적용)
+
+// JSON 코드 블록 스타일
 pre code .key {
   color: #e06c75 !important; /* JSON 키의 색상 (핑크빛) */
 }
@@ -73,4 +74,17 @@ pre code .null {
 
 pre code .punctuation {
   color: #abb2bf !important; /* 콤마, 중괄호 등 기본 텍스트 색상 */
+}
+
+// Bash 코드 블록 스타일
+pre code .command {
+  color: #61afef !important; /* 명령어 색상 (파란색) */
+}
+
+pre code .parameter {
+  color: #98c379 !important; /* 매개변수 색상 (초록색) */
+}
+
+pre code .flag {
+  color: #d19a66 !important; /* 플래그 색상 (주황색) */
 }
