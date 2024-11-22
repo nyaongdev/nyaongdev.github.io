@@ -31,3 +31,8 @@ code {
   border-radius: 3px; /* 모서리 둥글게 */
   font-size: 85%; /* 글자 크기 조정 */
 }
+
+pre.highlight, .highlight pre {
+  background-color: #2d2d2d !important; /* 강제 적용 */
+  color: #f8f8f2 !important;
+}
