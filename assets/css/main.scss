@@ -7,3 +7,30 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.highlight {
+  background-color: #282c34;  // Atom One Dark 배경 색상
+  color: #abb2bf;  // 기본 텍스트 색상
+  padding: 16px;  // 코드 블록 여백
+  border-radius: 5px;  // 모서리 둥글게
+  overflow: auto;  // 코드가 길 때 스크롤 가능하게
+}
+
+.highlight code {
+  color: inherit;  // 기본 코드 텍스트 색상
+}
+
+pre {
+  background-color: #282c34;  // pre 태그의 배경 색상도 설정
+  color: #abb2bf;
+  padding: 16px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+code {
+  background-color: #282c34;  // inline 코드 블록 배경 색상
+  color: #e06c75;  // Atom One Dark Material의 코드 텍스트 색상
+  padding: 4px 6px;
+  border-radius: 4px;
+}
