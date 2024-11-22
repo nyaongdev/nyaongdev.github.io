@@ -34,14 +34,14 @@ $caption-font-family: $serif !default;
 //  font-size: 1em;
 //}
 //
-//// 인라인 코드 스타일 (Velog 스타일 적용)
-//code {
-//  background-color: #2d2d2d !important; /* 어두운 배경 */
-//  color: #e06c75 !important; /* 핑크빛 텍스트 (Velog 스타일) */
-//  padding: 0 !important; /* 내부 여백 최소화 */
-//  border-radius: 3px !important; /* 모서리 둥글게 */
-//  font-size: 85%; /* 글자 크기 조정 */
-//}
+// 인라인 코드 스타일 (Velog 스타일 적용)
+code {
+  background-color: #2d2d2d !important; /* 어두운 배경 */
+  color: #e06c75 !important; /* 핑크빛 텍스트 (Velog 스타일) */
+  padding: 0 !important; /* 내부 여백 최소화 */
+  border-radius: 3px !important; /* 모서리 둥글게 */
+  font-size: 85%; /* 글자 크기 조정 */
+}
 
 html {
   font-size: 12px; // originally 16px
