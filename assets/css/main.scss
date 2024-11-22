@@ -8,31 +8,45 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// 코드 블록 스타일
-.highlight {
-  background-color: #f5f5f5; /* 밝은 회색 배경 */
-  color: #333; /* 어두운 텍스트 색상 */
-  padding: 1em; /* 내부 여백 */
-  border-radius: 5px; /* 모서리 둥글게 */
+// 코드 블록 스타일 (Velog 스타일 적용)
+pre.highlight, .highlight pre {
+  background-color: #2d2d2d !important; /* 어두운 배경 (Velog와 유사) */
+  color: #abb2bf !important; /* 텍스트 색상 */
+  padding: 0 !important; /* 내부 여백 제거 */
+  border-radius: 0 !important; /* 모서리 둥글기 제거 */
   overflow: auto; /* 내용이 넘칠 경우 스크롤 */
+  line-height: 1.5; /* 코드 간 간격 조정 */
 }
 
-.highlight code {
-  background-color: transparent; /* 코드 블록 내 코드의 배경 투명 */
-  color: inherit; /* 부모 요소의 색상 상속 */
-  padding: 0;
+.highlight code, pre code {
+  background-color: transparent !important; /* 코드 블록 내 코드의 배경 투명 */
+  color: inherit !important; /* 부모 요소의 색상 상속 */
+  padding: 0 !important; /* 여백 제거 */
+  font-size: 1em;
 }
 
-// 인라인 코드 스타일
+// 인라인 코드 스타일 (Velog 스타일 적용)
 code {
-  background-color: #f5f5f5; /* 밝은 회색 배경 */
-  color: #d63384; /* 핑크색 텍스트 */
-  padding: 0.2em 0.4em; /* 내부 여백 */
-  border-radius: 3px; /* 모서리 둥글게 */
+  background-color: #2d2d2d !important; /* 어두운 배경 */
+  color: #e06c75 !important; /* 핑크빛 텍스트 (Velog 스타일) */
+  padding: 0.1em 0.2em !important; /* 내부 여백 최소화 */
+  border-radius: 3px !important; /* 모서리 둥글게 */
   font-size: 85%; /* 글자 크기 조정 */
 }
 
-pre.highlight, .highlight pre {
-  background-color: #2d2d2d !important; /* 강제 적용 */
-  color: #f8f8f2 !important;
+// 특정 키워드에 대한 색상 (Velog 스타일)
+pre code .keyword {
+  color: #c678dd !important; /* 주요 키워드 색상 (보라색) */
+}
+
+pre code .string {
+  color: #98c379 !important; /* 문자열 색상 (초록색) */
+}
+
+pre code .function {
+  color: #61afef !important; /* 함수명 색상 (파란색) */
+}
+
+pre code .variable {
+  color: #e5c07b !important; /* 변수명 색상 (노란색) */
 }
