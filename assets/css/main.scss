@@ -1,6 +1,9 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/#{ $minimal-mistakes-skin }"; // skin 설정 (변수로 설정)
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-// Font 변경
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
